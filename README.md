@@ -1,4 +1,4 @@
-# Github Copilot
+# Github Copilot 😸
 
 [Acesse o Laboratório](https://github.com/geovanams/github-copilot-demo/blob/main/COPILOT_DEMOS.md)
 
