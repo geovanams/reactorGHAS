@@ -2,6 +2,6 @@ using System.Data.SqlClient;
 
 // BAD, Encrypt not specified
 string connectString =
-    "Server=1.2.3.4;Database=Anything;Integrated Security=true;";
+    "Server=1.2.3.4;Database=Anything;Integrated Security=true;Password=Admin123!";
 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
 var conn = new SqlConnection(builder.ConnectionString);
