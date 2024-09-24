@@ -1,7 +1,12 @@
 using System.Data.SqlClient;
 
 // BAD, Encrypt not specified
-string connectString =
-    "Server=1.2.3.4;Database=Anything;Integrated Security=true;Password=Admin123!";
-SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
-var conn = new SqlConnection(builder.ConnectionString);
+try
+            {
+                WeatherForecast item = null;
+                using SqlConnection connection = new SqlConnection("Server=localhost;Database=Todo;User Id=sa;Password=Password123;");
+ flows to this SQL connection and does not specify Encrypt=True.
+CodeQL
+                connection.OpenAsync();
+                
+                string selectCommand = "SELECT * FROM WeatherForecast WHERE id = " + id.ToString();
